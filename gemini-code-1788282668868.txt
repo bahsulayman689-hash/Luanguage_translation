@@ -1,0 +1,6 @@
+# Dockerfile.nllb
+FROM ghcr.io/huggingface/text-generation-inference:latest
+ENV MODEL_ID=facebook/nllb-200-distilled-600M
+ENV PORT=8080
+EXPOSE 8080
+CMD ["--model-id", "facebook/nllb-200-distilled-600M", "--port", "8080"]
